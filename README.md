@@ -13,7 +13,7 @@ This will start 4 Docker containers
 
 | Container Name | Description |
 | --------|---------|
-| gateway-dev | Container Gateway. Ports 8000, 8080, 8443, and 9443 are bind to the host. |
+| gateway-metrics-grafana-example | Container Gateway. Ports 8000, 8080, and 8443 are bind to the host. |
 | influxdb | InfluxDB. Port 3000 is bind to the host. |
 | grafana | Grafana |
 | http-echo | HTTP server used as a downstream service by the Gateway. |
@@ -50,6 +50,15 @@ To stop sending traffic to the Gateway, press `Ctrl + C`
 To stop running Docker containers, run the following command:
 
 `docker-compose -f ./docker-compose.yml down`
+
+# Managing the Gateway Configuration
+The gateway configuration is managed and built using the [gateway-developer-plugin](https://github.com/ca-api-gateway/gateway-developer-plugin).
+
+## Building a Deployment Package
+Build a deployment package by running `gradle build`. This will create a gw7 package in `deployment/build/gateway/deployment-1.0.0.gw7`
+
+## Exporting Policy Updates
+In order to export policy updates first make sure your gateway is running. Then run `gradle export`. This will export relevant policy changes.
 
 # Giving Back
 ## How You Can Contribute

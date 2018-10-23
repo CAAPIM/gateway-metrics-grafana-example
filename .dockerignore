@@ -3,13 +3,11 @@
 # of the MIT license.  See the LICENSE file for details.
 
 # Root files to ignore
-/.gradle/
-/.idea/
-/*.iml
-build/
-/out/
+.gradle*
+.idea*
+*.iml
+build/*
+*/build/*
+out/*
+*/out/*
 .DS_Store
-
-# Ignore the license out so that it is not accidentally committed.
-/license.xml
-/docker/license.xml
