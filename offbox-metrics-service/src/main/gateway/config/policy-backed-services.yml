@@ -1,0 +1,5 @@
+Off Box Service Metrics:
+  interfaceName: "com.l7tech.external.assertions.pbsmel.server.ServiceMetricsProcessor"
+  operations:
+  - policy: "Off Box Service Metrics/Service Metrics Event Listener Backing Policy.xml"
+    operationName: "process"

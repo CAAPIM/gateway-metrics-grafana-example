@@ -4,18 +4,14 @@
 
 version: '3.4'
 services:
-  gateway-dev:
-    hostname: gateway-dev
-    image: caapim/gateway:9.4.00
+  gateway-metrics-grafana-example:
+    hostname: localhost
+    build: .
+    image: gateway-metrics-grafana-example
     ports:
       - "8080:8080"
       - "8443:8443"
-      - "9443:9443"
       - "8000:8000"
-    volumes:
-      - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
-      - ./bundle/01_service_metrics_influxdb.req.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/01_service_metrics_influxdb.req.bundle
-      - ./bundle/02_test_services.req.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/02_test_services.req.bundle
     secrets:
       - source: license
         target: /opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml

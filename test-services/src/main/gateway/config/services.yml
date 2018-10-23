@@ -1,0 +1,36 @@
+Test Services/test3:
+  policy: "Test Services/test3.xml"
+  url: "/test3"
+  httpMethods:
+  - "DELETE"
+  - "POST"
+  - "GET"
+  - "PUT"
+  properties: {}
+Test Services/test4:
+  policy: "Test Services/test4.xml"
+  url: "/test4"
+  httpMethods:
+  - "DELETE"
+  - "POST"
+  - "GET"
+  - "PUT"
+  properties: {}
+Test Services/test1:
+  policy: "Test Services/test1.xml"
+  url: "/test1"
+  httpMethods:
+  - "DELETE"
+  - "POST"
+  - "GET"
+  - "PUT"
+  properties: {}
+Test Services/test2:
+  policy: "Test Services/test2.xml"
+  url: "/test2"
+  httpMethods:
+  - "DELETE"
+  - "POST"
+  - "GET"
+  - "PUT"
+  properties: {}
