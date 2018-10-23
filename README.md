@@ -13,7 +13,7 @@ This will start 4 Docker containers
 
 | Container Name | Description |
 | --------|---------|
-| gateway-dev | Container Gateway. Ports 8000, 8080, 8443, and 9443 are bind to the host. |
+| gateway-dev | Container Gateway. Ports 8000, 8080, and 8443 are bind to the host. |
 | influxdb | InfluxDB. Port 3000 is bind to the host. |
 | grafana | Grafana |
 | http-echo | HTTP server used as a downstream service by the Gateway. |
