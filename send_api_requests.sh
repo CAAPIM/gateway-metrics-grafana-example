@@ -2,7 +2,7 @@
 
 GATEWAY_HOSTNAME='localhost'
 GATEWAY_PORT='8080'
-GATEWAY_SERVICE_URL=(test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test2 test3 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4test4 test4 test4 test4 test4test4 test4 test4 test4 test4)
+GATEWAY_SERVICE_URL=(test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test2 test3 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4 test4)
 
 echo "Sending requests to host '${GATEWAY_HOSTNAME}' on port '${GATEWAY_PORT}'....."
 echo "Press Ctrl + C to cancel"
