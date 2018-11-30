@@ -1,6 +1,11 @@
 # Building a deployment bundle
 FROM gradle:4.10 as builder
-COPY --chown=gradle:gradle . /home/gradle/src
+
+COPY . /home/gradle/src
+USER root
+RUN chown -R gradle:gradle /home/gradle/src
+USER ${ENTRYPOINT_UID}
+
 WORKDIR /home/gradle/src
 RUN gradle build
 
