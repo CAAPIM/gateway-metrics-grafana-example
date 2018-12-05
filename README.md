@@ -4,6 +4,11 @@ This repository contains example configuration to send service metrics data from
 # Getting Started
 Before getting started, you must copy CA API Gateway license file to `./docker/license.xml`.
 
+This example has been tested using the following versions of Docker and Gradle:
+* Docker Engine v18.09.0
+* Docker Compose v1.23.2
+* Gradle v4.10.2
+
 ## Starting Docker containers
 To start the Docker containers, run the following command:
 
