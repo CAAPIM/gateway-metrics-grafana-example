@@ -1,3 +1,5 @@
+Repo has been moved. Please go to https://github.com/Layer7-Community/Integrations/tree/main/gateway-metrics-grafana-example
+
 # About
 This repository contains example configuration to send service metrics data from Container Gateway to [InfluxDB](https://www.influxdata.com) and visualize metrics dashboard in [Grafana](https://grafana.com).
 
